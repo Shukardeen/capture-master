@@ -16,11 +16,11 @@ function Header() {
 
   return (
     <nav className={`fixed top-0 h-20 w-full ${!!isScrolled ? "bg-black/70 backdrop-blur-2xl shadow-lg" : "bg-transparent"} text-primary z-50 transition-all duration-300 flex justify-between items-center`}>
-      <div className="w-2/5 px-16 box-border">
-        <h1 className="text-2xl font-bold tracking-tight">
+      <div className="w-1/2 md:w-2/5 pl-4 md:px-16 box-border flex flex-col">
+        <h2 className="text-lg md:text-2xl font-bold tracking-tight">
           CaptureMaster
-        </h1>
-        <p className="text-sm font-medium">Photography & Films</p>
+        </h2>
+        <p className="text-sm font-medium whitespace-nowrap">Photography & Films</p>
       </div>
 
       {/* Desktop Navigation */}
@@ -40,10 +40,10 @@ function Header() {
       </div>
 
       {/* Mobile menu button */}
-      <div className="md:hidden">
+      <div className="md:hidden w-1/2 flex justify-end items-center">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="text-gray-700 hover:text-blue-600 focus:outline-none p-2 rounded-lg hover:bg-gray-100 transition-colors"
+          className="text-white focus:outline-none p-2 rounded-lg transition-colors"
         >
           <svg
             className="h-6 w-6"
@@ -72,16 +72,16 @@ function Header() {
 
       {/* Mobile Navigation */}
       {isMenuOpen && (
-        <div className="md:hidden">
-          <div className="px-6 pt-4 pb-6 space-y-2 bg-white border-t border-gray-100">
+        <div className="md:hidden absolute top-20 right-4">
+          <div className="h-full px-10 py-3 flex flex-col justify-center items-center gap-3 rounded-md bg-white">
             {["home", "services", "portfolio", "about", "contact"].map(
-              (item) => (
+              (item, idx) => (
                 <button
-                  key={item}
+                  key={idx}
                   onClick={() => scrollToSection(item)}
-                  className="block w-full text-left px-4 py-3 rounded-lg text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-blue-50 transition-all duration-200"
+                  className="w-full text-base font-medium text-secondary transition-all duration-200"
                 >
-                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                  <span>{item.charAt(0).toUpperCase() + item.slice(1)}</span>
                 </button>
               )
             )}

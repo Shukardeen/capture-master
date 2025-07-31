@@ -28,7 +28,7 @@ function Portfolio() {
                   alt={item.title}
                   className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
+                <div className="opacity-100 md:opacity-0 absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent group-hover:opacity-100 transition-opacity duration-500 flex items-end">
                   <div className="p-8 text-white w-full">
                     <h3 className="text-2xl font-bold mb-2 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">{item.title}</h3>
                     <p className="text-gray-300 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">{item.category}</p>

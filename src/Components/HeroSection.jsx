@@ -5,14 +5,14 @@ function HeroSection() {
   return (
     <section
       id="home"
-      className="text-primary relative bg-black py-44 bg-cover flex items-center justify-center"
+      className="min-h-screen text-primary relative bg-black py-44 bg-cover flex items-center justify-center"
     >
       <video className="absolute w-full h-full object-cover opacity-30" autoPlay loop muted>
         <source src="https://videos.pexels.com/video-files/2239241/2239241-hd_1920_1080_24fps.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="relative z-10 text-center px-6 sm:px-8 lg:px-10 max-w-6xl mx-auto flex flex-col justify-center items-center">
-        <h1 className="text-5xl md:text-7xl lg:text-6xl font-bold tracking-tight leading-tight">
+      <div className="relative z-10 text-center px-6 sm:px-8 lg:px-10 max-w-6xl mx-auto flex flex-col justify-center items-center mt-8 md:m-0">
+        <h1 className="text-5xl md:text-7xl lg:text-6xl font-bold tracking-tight leading-tight whitespace-nowrap">
           Capture Master
         </h1>
         <p className="text-xl md:text-2xl lg:text-3xl mb-10 text-gray-300 font-light">

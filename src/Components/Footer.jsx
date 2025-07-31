@@ -12,9 +12,9 @@ function Footer() {
                 Capturing life's most precious moments with artistic vision and professional excellence.
               </p>
               <div className="flex space-x-6">
-                {[<SiInstagram/>, <SiFacebook />, <SiX />, <SiYoutube />].map((platform) => (
+                {[<SiInstagram/>, <SiFacebook />, <SiX />, <SiYoutube />].map((platform, idx) => (
                   <a
-                    key={platform}
+                    key={idx}
                     href="#"
                     className="text-gray-400 hover:text-white transition-colors duration-300 text-lg"
                   >
@@ -46,7 +46,8 @@ function Footer() {
           </div>
           
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p className="text-lg">&copy; {new Date().getFullYear()} Brothers's Creation - Photography & Films. All rights reserved.</p>
+            <p className="text-lg">&copy; {new Date().getFullYear()} Capture Master - Photography & Films. All rights reserved.</p>
+            <p className='text-base mt-4'>Developed by Shukardeen Gahlot</p>
           </div>
         </div>
       </footer>
