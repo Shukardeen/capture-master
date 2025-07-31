@@ -1,6 +1,6 @@
-# Brothers's Creation - Photography & Films Website
+# 📷 Capture Master - Photography & Films Website
 
-A professional, modern website for Brothers's Creation photography and videography business. Built with React, Vite, and Tailwind CSS.
+A professional, modern website for Capture Master photography and videography business. Built with React, Vite, and Tailwind CSS.
 
 ## Features
 
@@ -85,9 +85,6 @@ The built files will be in the `dist` directory.
 
 ## Customization
 
-### Colors
-The website uses a blue color scheme. You can customize colors by modifying the Tailwind classes in the components.
-
 ### Content
 - Update the business name, contact information, and descriptions in `src/App.jsx`
 - Replace placeholder images with actual photography work
@@ -118,14 +115,6 @@ The website can be deployed to any static hosting service:
 - **Pricing Tables**: Add detailed pricing information
 - **Multi-language Support**: Add internationalization
 
-## License
-
-This project is licensed under the MIT License.
-
-## Contact
-
-For questions about this website template or customization requests, please contact the development team.
-
 ---
 
-**Brothers's Creation** - Capturing life's most precious moments with artistic vision and professional excellence.
+**Capture Master** - Capturing life's most precious moments with artistic vision and professional excellence.
