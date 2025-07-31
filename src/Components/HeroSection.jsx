@@ -21,13 +21,13 @@ function HeroSection() {
         <div className="flex justify-center items-center gap-6">
           <button
             onClick={() => scrollToSection("portfolio")}
-            className="h-14 w-fit whitespace-nowrap bg-primary hover:bg-white text-secondary px-4 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
+            className="h-14 w-fit whitespace-nowrap bg-primary hover:bg-white text-secondary px-4 md:px-10 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl cursor-pointer"
           >
             View Our Work
           </button>
           <button
             onClick={() => scrollToSection("contact")}
-            className="h-14 w-fit whitespace-nowrap border-2 border-white text-white hover:bg-white hover:text-gray-900 px-4 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 cursor-pointer"
+            className="h-14 w-fit whitespace-nowrap border-2 border-white text-white hover:bg-white hover:text-gray-900 px-4 md:px-10 py-4 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 cursor-pointer"
           >
             Get In Touch
           </button>
@@ -35,7 +35,7 @@ function HeroSection() {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-30 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-30 md:bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
         <svg
           className="w-8 h-8 text-primary"
           fill="none"
